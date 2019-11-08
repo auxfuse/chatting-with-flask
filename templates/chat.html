@@ -25,10 +25,10 @@
 
         let timer = setTimeout(function(){
             location.reload();
-        }, 5000)
+        }, 5000);
 
         textbox.onkeydown = function(e) {
-            clearTimeout(timer)
+            clearTimeout(timer);
 
             timer = setTimeout(function() {
                 location.reload();

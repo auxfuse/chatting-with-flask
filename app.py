@@ -33,4 +33,4 @@ def user(username):
         return redirect(url_for("user", username=session["username"]))
     return render_template("chat.html", username = username, chat_messages = messages)
 
-app.run(host=os.getenv('IP', "0.0.0.0."), port=os.getenv('PORT', "5000"), debug=False)
+app.run(host=os.getenv("IP"), port=os.getenv("PORT"), debug=False)
